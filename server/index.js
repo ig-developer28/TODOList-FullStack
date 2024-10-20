@@ -9,7 +9,7 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json({extended:true}))
 app.use(bodyParser.urlencoded({extended:true}))
-app.use('/pi',Routes)
+app.use('/api',Routes)
 const PORT = 8000;
 
 connection();
