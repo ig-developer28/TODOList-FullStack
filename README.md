@@ -109,6 +109,6 @@ Replace `your_mongodb_connection_string` with your actual MongoDB connection str
 
 The application is deployed on Vercel. You can access it via the following URL:
 
-[Your Deployed Application Link](https://your-vercel-app.vercel.app)
+to-do-web-app-master.vercel.app
 
 Ensure to set up environment variables in Vercel similar to your local setup.
