@@ -8,7 +8,7 @@ export const addNewTodo = (data) => async(dispatch) =>{
 
     try{
 
-      const res = await axios.post(`${API_URL}/todos`,data)
+      const res = await axios.post(`${API_URL}/api/todos`,data)
       
       dispatch(
         { 
@@ -24,7 +24,7 @@ export const addNewTodo = (data) => async(dispatch) =>{
 export const getAllTodos = (name) => async (dispatch)=>{
   try{
 
-    const res = await axios.get(`${API_URL}/todos`,{
+    const res = await axios.get(`${API_URL}/api/todos`,{
       params: {
         username: name,  // Send the username as a query parameter
       },
@@ -45,7 +45,7 @@ export const getAllTodos = (name) => async (dispatch)=>{
 export const toggleTodo = (id) => async (dispatch)=>{
   try{
 
-    const res = await axios.get(`${API_URL}/todos/${id}`)
+    const res = await axios.get(`${API_URL}/api/todos/${id}`)
     
     dispatch(
       { 
@@ -61,7 +61,7 @@ export const toggleTodo = (id) => async (dispatch)=>{
 export const updateTodo = (id,data) => async (dispatch)=>{
   try{
 
-    const res = await axios.put(`${API_URL}/todos/${id}`,{data})
+    const res = await axios.put(`${API_URL}/api/todos/${id}`,{data})
     
     dispatch(
       { 
@@ -77,7 +77,7 @@ export const updateTodo = (id,data) => async (dispatch)=>{
 export const deleteTodo = (id) => async (dispatch)=>{
   try{
 
-    const res = await axios.delete(`${API_URL}/todos/${id}`)
+    const res = await axios.delete(`${API_URL}/api/todos/${id}`)
     
     dispatch(
       { 

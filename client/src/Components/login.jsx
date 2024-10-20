@@ -10,7 +10,7 @@ export default function Login({setusername}){
           name:username.current.value,
           password:password.current.value
         }
-        const response=await axios.post("http://localhost:8000/login",data)
+        const response=await axios.post("http://localhost:8000/api/login",data)
         if(response.status===200){
            setusername(username.current.value);
         }

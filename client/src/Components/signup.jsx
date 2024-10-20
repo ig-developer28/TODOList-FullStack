@@ -12,7 +12,7 @@ export default function Signup(){
             password:password.current.value
         }
         try{
-        const response=await axios.post("http://localhost:8000/signup",data)
+        const response=await axios.post("http://localhost:8000/api/signup",data)
         if(response.status===200){
             navigate("/")
         }
