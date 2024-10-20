@@ -13,7 +13,7 @@ export default function Signup(){
         }
         try{
         const response=await axios.post("http://localhost:8000/signup",data)
-        if(response.status==200){
+        if(response.status===200){
             navigate("/")
         }
         else{

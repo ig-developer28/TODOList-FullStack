@@ -14,7 +14,7 @@ export const Todos = ({Username}) => {
 
     useEffect(()=>{
         dispatch(getAllTodos(Username))
-    },[])
+    },[Username, dispatch])
 
     const getTodos = () => {
         if(currentTab === ALL_TODO ){

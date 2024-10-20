@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={username!='' ? <> <Header/>
+        <Route path="/" element={username!=='' ? <> <Header/>
         <ToDoForm Username={username}/>
         <Todos Username={username}/></> : <Login setusername={setUsername}/>} />
         <Route path="/signup" element={<Signup />} />
