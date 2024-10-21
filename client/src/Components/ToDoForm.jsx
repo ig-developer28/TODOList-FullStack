@@ -31,7 +31,7 @@ const ToDoForm = ({Username}) => {
     return(
         <form action="submit" className="form" onSubmit={onFormSubmit}>
             <input type="text" placeholder="Enter your todo...." className="input" onChange={onInputChange} value={text}/>
-            <input type="submit" value="submit" className="btn btn-primary" />
+            <button type="submit" value="submit" className="btn btn-primary" > Submit </button>
         </form>
     )
 }
