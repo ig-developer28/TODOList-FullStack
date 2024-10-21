@@ -21,6 +21,7 @@ This is a full-stack To-Do List application built using React for the frontend a
 ## Features
 
 - User can add, edit, and delete to-do items.
+- Mark todoItems as completed by clicking on them
 - Display list of to-do items.
 - Responsive design for mobile and desktop views.
 - Authentication enabling only todos shown to the user who created it
