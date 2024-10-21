@@ -99,7 +99,7 @@ git clone [url of this repo]
    npm start
    ```
 
-3. The backend server will run on `http://localhost:5000`.
+3. The backend server will run on `http://localhost:8000`.
 
 ## Environment Variables
 
