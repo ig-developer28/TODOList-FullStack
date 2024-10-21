@@ -23,6 +23,7 @@ This is a full-stack To-Do List application built using React for the frontend a
 - User can add, edit, and delete to-do items.
 - Display list of to-do items.
 - Responsive design for mobile and desktop views.
+- Authentication enabling only todos shown to the user who created it
 
 ## Technologies
 
@@ -31,6 +32,12 @@ This is a full-stack To-Do List application built using React for the frontend a
 - **Deployment**: Vercel (for frontend and backend)
 
 ## Installation
+
+Git clone the repository:
+
+```bash
+git clone [url of this repo]
+```
 
 ### Frontend
 
@@ -51,7 +58,7 @@ This is a full-stack To-Do List application built using React for the frontend a
 1. Navigate to the `server` directory:
 
    ```bash
-   cd ../server
+   cd server
    ```
 
 2. Install dependencies:
@@ -83,7 +90,7 @@ This is a full-stack To-Do List application built using React for the frontend a
 1. Navigate to the `server` directory:
 
    ```bash
-   cd ../server
+   cd server
    ```
 
 2. Start the backend server:
@@ -100,7 +107,6 @@ For the backend, create a `.env` file in the `server` directory and add the foll
 
 ```
 MONGODB_URI=your_mongodb_connection_string
-PORT=5000
 ```
 
 Replace `your_mongodb_connection_string` with your actual MongoDB connection string.
