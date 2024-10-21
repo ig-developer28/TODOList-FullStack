@@ -1,4 +1,4 @@
-Sure! Here’s the complete content for your `README.md` file. You can copy the entire block below:
+
 
 # Full-Stack To-Do List Application
 
